@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.04fc07c1.css",
+    "main.css": "/static/css/main.9170d777.css",
     "main.js": "/static/js/main.c77303cb.js",
     "static/media/Ve-tranh-thuy-mac-Trung-Quoc-co.jpg": "/static/media/Ve-tranh-thuy-mac-Trung-Quoc-co.cdabbedf29fa2451ab4c.jpg",
     "static/media/delete-icon.png": "/static/media/delete-icon.8419ba861a6c1b52064e.png",
@@ -10,11 +10,11 @@
     "static/media/kiem-lai.jpg": "/static/media/kiem-lai.a4fc4933b17f166002b4.jpg",
     "static/media/Ve-tranh-thuy-mac-mat-troi-lan.jpg": "/static/media/Ve-tranh-thuy-mac-mat-troi-lan.001d7abd2bdc15892b3e.jpg",
     "index.html": "/index.html",
-    "main.04fc07c1.css.map": "/static/css/main.04fc07c1.css.map",
+    "main.9170d777.css.map": "/static/css/main.9170d777.css.map",
     "main.c77303cb.js.map": "/static/js/main.c77303cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.04fc07c1.css",
+    "static/css/main.9170d777.css",
     "static/js/main.c77303cb.js"
   ]
 }
