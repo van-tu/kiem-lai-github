@@ -17,7 +17,7 @@ export const PostForm = () => {
 
   const schema = yup.object().shape({
     title: yup.string().max(50, "This title too long.").required('You must add Title.'),
-    description: yup.string().max(250, "This description too long.").required('You must add Description.')
+    description: yup.string().max(200, "This description too long.").required('You must add Description.')
   });
 
   const { register, handleSubmit, formState: {errors} } = useForm({

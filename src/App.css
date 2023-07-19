@@ -243,9 +243,9 @@ body {
   border: 1px solid gray;
   border-radius: 0.5rem;
   background-image: url(./images/old-paper-1.jpg);
-  background-position: bottom;
+  background-position: top;
   box-shadow: 0 0 3px yellow;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .post__title {
