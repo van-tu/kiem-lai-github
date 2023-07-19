@@ -1,0 +1,402 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lugrasimo&family=Pacifico&family=Ysabeau+SC&display=swap');
+
+/* || GRENARAL */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  /* FONT */
+  --FONT-SIZE: 1.5rem;
+  --FONT-FAMILY: 'Dancing Script', Arial;
+  --FONT-FAMILY-BT: 'Ysabeau SC', sans-serif;
+  --FONT-SIZE-TITLE: 2rem;
+  --FONT-SIZE-NAV: clamp(11px, 1.8vw, 1rem);
+
+  /* BG */
+  --BG-HEADER: rgb(3, 173, 173);
+  
+  
+  /* PD */
+  --PD-HEADER: .5rem;
+  --PD: 0.8rem;
+
+  /* COLOR */
+  --COLOR-TITLE: whitesmoke;
+
+  /* SIZE */
+  --HEIGHT-TITLE: 5rem;
+  --HEIGHT-NAV: 3.3rem;
+  
+}
+
+@media screen and (max-width: 320px) {
+  :root {
+    --HEIGHT-TITLE: 2.7rem;
+    --HEIGHT-NAV: 2rem;
+    --FONT-SIZE-NAV: clamp(8px, 1.8vw, 1rem);
+    --FONT-SIZE-TITLE: 1.3rem;
+  }
+
+  .navbar__account img {
+    aspect-ratio: 1 / 1;
+    width: 20px;
+    height: auto;
+    
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --HEIGHT-TITLE: 2.7rem;
+    --HEIGHT-NAV: 2.4rem;
+    --FONT-SIZE-TITLE: 1.5rem;
+  }
+}
+
+
+button {
+  font-size: inherit;
+}
+
+body {
+  font-size: var(--FONT-SIZE);
+  font-family: var(--FONT-FAMILY);
+  background-image: url(./images/Ve-tranh-thuy-mac-Trung-Quoc-co.jpg);
+}
+
+/* || HEARDER */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--BG-HEADER);
+  background-image: url(./images/kiem-lai.jpg);
+  background-position: 0% 90%;
+  z-index: 1;
+}
+
+.header__title {
+  font-size: var(--FONT-SIZE-TITLE);
+  height: var(--HEIGHT-TITLE);
+  padding: var(--PD-HEADER);
+  /* color: var(--COLOR-TITLE); */
+  background-image: url(./images/old-paper-3.jpg);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* || NAV BAR */
+
+.navbar {
+  background-image: linear-gradient( lightpink, rgb(214, 213, 213));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--PD);
+  height: var(--HEIGHT-NAV);
+  font-size: var(--FONT-SIZE-NAV);
+}
+
+.navbar__link {
+  display: flex;
+  margin-right: clamp(1rem, 5vw, 3rem);
+  font-family: var(--FONT-FAMILY-BT);
+  
+}
+
+.navbar__link-home, 
+.navbar__link-login {
+  transform: translateY(-3px);
+  transition: 0.2s;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  border: 4px solid;
+  border-color: transparent transparent rgb(150, 141, 126) transparent;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: rgb(3, 200, 200);
+  text-shadow: 0 0 1px red;
+  border-width: 0 4px 1px 4px;
+  border-style: solid;
+  border-color: transparent transparent rgb(52, 50, 47) transparent;
+}
+
+.navbar__link-home:hover,
+.navbar__link-home:active,
+.navbar__link-login:active,
+.navbar__link-login:hover {
+  transform: translateY(0);
+}
+
+.navbar a:visited {
+  color: black;
+}
+
+.navbar a:active {
+  color: rgb(1, 129, 129);
+  text-shadow: 0 0 1px rgb(207, 1, 1);
+  border-width: 0 4px 1px 4px;
+  border-style: solid;
+  border-color: transparent transparent rgb(52, 50, 47) transparent;
+}
+
+.navbar__account {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* margin-right: clamp(.2rem, 1vw, 1.5rem);; */
+}
+
+.navbar__account img {
+  border-radius: 50%;
+  margin-left: 0.3rem;
+  margin-right: clamp(5px, 3vw, 1rem);
+}
+
+.navbar__account button {
+  font-family: var(--FONT-FAMILY-BT);
+  font-size: calc(var(--FONT-SIZE-NAV) * 60 / 100);
+  padding: 4px 15px;
+  border-radius: 0.7rem;
+  background-image: linear-gradient(var(--BG-HEADER), white);
+  border: 2px solid rgb(50, 50, 50);
+  border-bottom: 5px solid rgb(50, 50, 50);
+  transform: translate(0, -3px);
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.navbar__account button:active,
+.navbar__account button:hover {
+  transform: translate(0, 0);
+  border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+/* || MAIN POST */
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  column-gap: clamp(0.2rem, 2vw, 2.5rem);
+  row-gap: clamp(0.2rem, 4vh, 2.5rem);
+  padding: clamp(.2rem, 2vw, 2.5rem);
+  padding-top: calc(var(--HEIGHT-TITLE) + var(--HEIGHT-NAV) + 2rem);
+}
+
+.post {
+  position: relative;
+  padding: clamp(.3rem, 2vw, 1.5rem);
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  background-image: url(./images/old-paper-1.jpg);
+  background-position: bottom;
+  box-shadow: 0 0 3px yellow;
+  max-width: 200px;
+}
+
+.post__title {
+  margin-bottom: 1rem;
+}
+
+.post__footer {
+  margin-top: 1rem;
+}
+
+.post button {
+  font-family: var(--FONT-FAMILY-BT);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.2rem .3rem;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 0.3rem;
+}
+
+.post button:hover {
+  opacity: .8;
+  transform: translateY(2px);
+}
+
+.post button:active {
+  transform: scale(.9);
+}
+
+.post__delete {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: clamp(30px, 5.2vh, 50px);
+}
+
+.post__delete:hover,
+.post__delete:focus {
+  transform: translate(2px, 2px);
+}
+
+.post__delete:active {
+  transform: scale(.9);
+}
+
+/* || CREATE FORM */
+
+.create-post {
+  padding-top: calc(var(--HEIGHT-TITLE) + var(--HEIGHT-NAV) + 1.2rem);
+  color: yellow;
+}
+
+.create-post form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 0;
+  row-gap: .5rem;
+  width: 300px;
+  margin: auto;
+  background-image: url(./images/Ve-tranh-thuy-mac-mat-troi-lan.jpg);
+  background-position: top right;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+}
+
+.create-post textarea,
+.create-post input {
+  font-size: 1.2rem;
+  font-family: inherit;
+  border-radius: 8px;
+  width: 100%;
+  background-image: url(./images/old-paper-2.jpg);
+  background-position: center;
+}
+
+.create-post__input-title {
+  padding: .5rem .7rem;
+}
+
+.create-post__input-description {
+  padding: .5rem .7rem;
+  resize: none;
+}
+.create-post .create-post__submit {
+  margin-top: 1rem;
+  font-family: var(--FONT-FAMILY-BT);
+  font-weight: bold;
+  height: 2.3rem;
+  border: 1px solid black;
+  border-bottom: 5px black solid;
+  transform: translate(0, -4px);
+  transition: all .2s linear;
+}
+
+.create-post__submit:hover {
+  border-bottom: 1px solid black;
+  transform: translate(0, 0);
+}
+
+.create-post__submit:active {
+  transform: scale(.95);
+}
+
+/* || LOGIN */
+
+.login {
+  padding-top: calc(var(--HEIGHT-TITLE) + var(--HEIGHT-NAV) + 2rem);
+}
+
+.login h2 {
+  color: yellow;
+  margin-bottom: 1rem;
+}
+
+.login button {
+  font-family: var(--FONT-FAMILY-BT);
+  padding: .5rem;
+  border-radius: .7rem;
+  border: 2px solid black;
+  border-bottom: 5px solid black;
+  transform: translateY(-3px);
+  transition: all .2s linear;
+  background-image: linear-gradient(pink, red);
+}
+
+.login button:hover {
+  transform: translateY(0);
+  border-bottom: 2px solid black;
+}
+
+.login button:active {
+  transform: scale(.95);
+}
+
+/* || DELETE POST */
+
+#n {
+  display: none;
+}
+
+
+@media  screen and (min-aspect-ratio: 7 / 4) and (max-width: 900px) {
+  .post-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  .post {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+}
