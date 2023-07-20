@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.9170d777.css",
-    "main.js": "/static/js/main.c77303cb.js",
+    "main.css": "/static/css/main.203e52b8.css",
+    "main.js": "/static/js/main.c87cf72e.js",
     "static/media/Ve-tranh-thuy-mac-Trung-Quoc-co.jpg": "/static/media/Ve-tranh-thuy-mac-Trung-Quoc-co.cdabbedf29fa2451ab4c.jpg",
     "static/media/delete-icon.png": "/static/media/delete-icon.8419ba861a6c1b52064e.png",
-    "static/media/old-paper-1.jpg": "/static/media/old-paper-1.5ff7628396775ced1935.jpg",
+    "static/media/old-paper-1.jpg": "/static/media/old-paper-1.1600e3ff04d9b8caad9e.jpg",
     "static/media/old-paper-3.jpg": "/static/media/old-paper-3.4ae021383f05bde72746.jpg",
     "static/media/old-paper-2.jpg": "/static/media/old-paper-2.233792c44e12b98e45e5.jpg",
     "static/media/kiem-lai.jpg": "/static/media/kiem-lai.a4fc4933b17f166002b4.jpg",
     "static/media/Ve-tranh-thuy-mac-mat-troi-lan.jpg": "/static/media/Ve-tranh-thuy-mac-mat-troi-lan.001d7abd2bdc15892b3e.jpg",
     "index.html": "/index.html",
-    "main.9170d777.css.map": "/static/css/main.9170d777.css.map",
-    "main.c77303cb.js.map": "/static/js/main.c77303cb.js.map"
+    "main.203e52b8.css.map": "/static/css/main.203e52b8.css.map",
+    "main.c87cf72e.js.map": "/static/js/main.c87cf72e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9170d777.css",
-    "static/js/main.c77303cb.js"
+    "static/css/main.203e52b8.css",
+    "static/js/main.c87cf72e.js"
   ]
 }
